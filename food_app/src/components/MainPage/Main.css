@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Marck+Script&display=swap');
+
+.main-container {
+    
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.main-header-container {
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 40px;
+}
+
+.main-header {
+    font-family: 'Marck Script', cursive;
+    margin-top: 10px;
+    font-size: 40px;
+    color: white;
+}
+
+.main-logo {
+    height: 70px;
+}
+
+.left-side {
+    width: 50%;
+}
+
+.right-side {
+    width: 50%;
+}
+
+.main-button-container {
+    display: flex;
+    height: 500px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.main-button {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    width: 250px;
+    height: 60px;
+    border-radius: 35px;
+    border: 3px solid #ECC30B;
+    background-color: #141414;
+    color: #ECC30B;
+    font-size: 20px;
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+
+.main-button:hover {
+    color: #141414;
+    background-color: #ECC30B;
+    transform: scale(1.05);
+}
+
+.food-poster {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
