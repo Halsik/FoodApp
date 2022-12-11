@@ -1,15 +1,45 @@
-import React from "react";
+import React, {useState, useEffect  } from "react";
 import './Main.css'
 import logo from '../images/logo.png'
-import foodPic from '../images/food1.avif'
+import RightSide from "./RightSide";
+import sliderPicOne from '../images/food1.avif'
+import sliderPicTwo from '../images/food2.avif'
+import sliderPicThree from '../images/food3.avif'
+import sliderPicFour from '../images/food4.avif'
+import sliderPicFive from '../images/food5.avif'
+
 
 function Main() {
 
 
+const arrayOfPhotos =[
+    sliderPicOne, sliderPicTwo, sliderPicThree, sliderPicFour, sliderPicFive
+]
+
+const [slider, setSlider] = useState(0)
+
+useEffect(() => {
+    const interval = setTimeout(() => {
+        setSlider(prevSlider => prevSlider + 1)
+        if(slider >= 4) {
+            setSlider(0)
+        }
+       
+      }, 4000);
+    return () => interval;
+  }, );
+
+    
+    
+    
+  
     return(
         <div className="main-container">
             <div className="left-side">
-                <img className="food-poster" src={foodPic}/>
+                <RightSide 
+                slides={arrayOfPhotos}
+                numberOfSlide={slider}  
+                />
             </div>
             <div className="right-side">
                 <div className="main-header-container">

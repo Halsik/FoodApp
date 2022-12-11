@@ -28,6 +28,8 @@
 }
 
 .left-side {
+    background-color: #141414;
+    position: relative;
     width: 50%;
 }
 
@@ -63,8 +65,41 @@
     transform: scale(1.05);
 }
 
-.food-poster {
+.poster {
+    position: absolute;
     object-fit: cover;
     height: 100%;
     width: 100%;
 }
+
+.food-poster-current {
+    animation-duration: 4s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+}
+
+
+
+@keyframes slidein {
+    from {
+      opacity: 0;
+    }
+
+    15% {
+        opacity: 1;
+    }
+  
+    50% {
+      opacity: 1;
+    }
+
+    85% {
+        opacity: 1;
+    }
+  
+    to {
+      opacity: 0;
+    }
+  }
+
+
