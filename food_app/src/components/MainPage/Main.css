@@ -38,6 +38,7 @@
 }
 
 .main-button-container {
+    z-index: 1;
     display: flex;
     height: 500px;
     align-items: center;
@@ -82,10 +83,12 @@
 
 @keyframes slidein {
     from {
+      transform: translateX(-100%);  
       opacity: 0;
     }
 
     15% {
+        transform: translateX(0%);
         opacity: 1;
     }
   
@@ -94,10 +97,12 @@
     }
 
     85% {
+        transform: translateX(0%);
         opacity: 1;
     }
   
     to {
+        transform: translateX(-100%);
       opacity: 0;
     }
   }
