@@ -1,0 +1,65 @@
+.navbar-container {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    box-shadow: 0 0 7px rgb(74, 70, 70);
+}
+
+.navbar-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 33.3%;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 33.3%;
+}
+
+.navbar-logo-image {
+    height: 60px;
+    margin-right: 20px;
+}
+
+.navbar-logo-text {
+    font-family: 'Marck Script', cursive;
+    font-size: 40px;
+}
+
+.navbar-header {
+    font-family: 'Marck Script', cursive;
+    font-size: 45px;
+
+}
+
+.navbar-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 33.3%;
+}
+
+.navbar-back {
+   
+        font-family: 'M PLUS Rounded 1c', sans-serif;
+        width: 200px;
+        height: 50px;
+        border-radius: 35px;
+        border: 3px solid #ECC30B;
+        background-color: #141414;
+        color: #ECC30B;
+        font-size: 20px;
+        transition-duration: 0.2s;
+        cursor: pointer;
+    }
+    
+.navbar-back:hover {
+        color: #141414;
+        background-color: #ECC30B;
+        transform: scale(1.05);
+    }
+
+
