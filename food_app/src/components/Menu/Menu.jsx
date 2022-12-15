@@ -4,7 +4,14 @@ import FlipCard from "./Flip-card";
 import foodData from "./foodData";
 import Navbar from "./Navbar";
 
-const foodArray = foodData.food.breakfast
+
+
+
+function Menu(props) {
+
+    const foodArray = foodData.food.breakfast
+
+    console.log(props.type)
 
 const newFoodArray = foodArray.map(item => {
     return (
@@ -20,13 +27,17 @@ const newFoodArray = foodArray.map(item => {
 })
 
 
-function Menu() {
+
+
 
     return(
-       <div className="menu-container">
+       <div  className="menu-container">
             <Navbar />
             <div className="menu-card-container">
                 {newFoodArray}
+            </div>
+            <div className="buttons">
+
             </div>
             
        </div>

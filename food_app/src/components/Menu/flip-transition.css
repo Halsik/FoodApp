@@ -5,7 +5,7 @@
    
     margin-top: 10px;
     margin-bottom: 20px;
-    
+    border-radius: 10px;
 }
 
 .flip-exit-active {
@@ -16,6 +16,7 @@
     width: 500px;
    margin-top: 10px;
    margin-bottom: 20px;
+   border-radius: 10px;
 }
 
 .flip-exit-done {
@@ -24,12 +25,14 @@
     width: 500px;
     margin-top: 10px;
     margin-bottom: 20px;
+    border-radius: 10px;
 }
 
 .flip-enter {
     transition-duration: 1s;
     transform: rotateY(180deg);
     height: 650px;
+    border-radius: 10px;
     width: 500px;
 }
 
@@ -40,6 +43,7 @@
     height: 400px;
     width: 300px;
     overflow: hidden;
+    border-radius: 10px;
 }
 
 .flip-enter-done {
@@ -48,6 +52,7 @@
     height: 400px;
     width: 300px;
     overflow: hidden;
+    border-radius: 10px;
 }
 
 .grow-exit {

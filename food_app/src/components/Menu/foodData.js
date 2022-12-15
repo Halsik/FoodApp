@@ -2,7 +2,7 @@ import breakfastImageOne from '../images/food3.avif'
 import breakfastImageTwo from '../images/food1.avif'
 import breakfastImageThree from '../images/food2.avif'
 import breakfastImageFour from '../images/food4.avif'
-
+import breakfastImageFive from '../images/food5.avif'
 
 export default {
 
@@ -32,6 +32,13 @@ export default {
                 "img": breakfastImageFour,
                 "ingredients": "Honey"
             },
+            {
+                "id": 5,
+                "name": "Chicken Burger",
+                "img": breakfastImageFive,
+                "ingredients": "Honey"
+            },
+            
             
            
            

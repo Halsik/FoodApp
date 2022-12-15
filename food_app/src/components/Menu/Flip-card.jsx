@@ -18,7 +18,7 @@ function FlipCard(props) {
             classNames='grow'>
                 
         <div className="flip-card-container">
-            <h1>{props.name}</h1>
+            <h1 className="card-header">{props.name}</h1>
             <CSSTransition
             in={cardSide}
             timeout={300}

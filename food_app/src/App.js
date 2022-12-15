@@ -7,7 +7,8 @@ function App() {
   return (
     <div className="App">
       {/* <Main /> */}
-      <Menu />
+      <Menu 
+      type="breakfast"/>
     </div>
   );
 }

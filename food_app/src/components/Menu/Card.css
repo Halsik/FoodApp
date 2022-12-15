@@ -2,12 +2,12 @@
     height: 400px;
     width: 300px;
     position: relative;
+    cursor: pointer;
 
     transform-style:preserve-3d;
 
     border-radius: 10px;
-    border: 5px solid rgba(255, 255, 255, 0.551);
-    box-shadow: 0 0 7px 0px rgba(255, 255, 255, 0.551);
+    box-shadow: 0 0 30px  #000000;
   
 
     transition: transform 1000ms;
