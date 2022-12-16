@@ -52,11 +52,27 @@ h1 {
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #888; 
+  width: 80%;
 }
 
 
 
 ::-webkit-scrollbar-thumb:horizontal{
+    width: 80%;
     background: rgba(0, 0, 0, 0.404);
     border-radius: 10px;
 }
+
+@media screen and (max-width: 800px) {
+    .menu-card-container {
+       
+       display: flex;
+       flex-direction: column;
+       overflow-x: hidden;
+       overflow-y: scroll;
+       align-items: center;
+       justify-content: flex-start;
+       
+    }
+    
+  }

@@ -9,14 +9,12 @@ function App() {
 
 
 
-  const [typeOfMeal, setTypeOfMeal] = useState(foodData.food.lunch)
-  const [headerMeal, setHeaderMeal] = useState("Dessert")
+  const [typeOfMeal, setTypeOfMeal] = useState(foodData.food.breakfast)
+  const [headerMeal, setHeaderMeal] = useState("Breakfast")
 
   const changeToDinner = () => {
     setTypeOfMeal(foodData.food.dinner)
     setHeaderMeal("Dinner")
-    foodData.food.breakfast.push("blablabla")
-    console.log(foodData.food.breakfast)
   }
 
   const changeToBreakfast = () => {
@@ -40,15 +38,15 @@ function App() {
 
   return (
     <div className="App">
-      <Main 
+      {/* <Main 
       changeToDinner={changeToDinner}
       changeToLunch={changeToLunch}
       changeToBreakfast={changeToBreakfast}
       changeToDessert={changeToDessert}
-      changeToCoctails={changeToCoctails}/>
-      {/* <Menu 
+      changeToCoctails={changeToCoctails}/> */}
+      <Menu 
       type={typeOfMeal}
-      header={headerMeal}/> */}
+      header={headerMeal}/>
     </div>
   );
 }

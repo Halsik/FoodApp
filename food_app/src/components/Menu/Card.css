@@ -28,7 +28,7 @@
     justify-content: center;
     color: black;
 
-
+    
     position: absolute;
 }
 
@@ -44,6 +44,7 @@
     background-color: black;
     overflow-x: hidden;
     overflow-y: auto;
+    border-radius: 10px;
 }
 
 
@@ -90,11 +91,12 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
-    
+    border-radius: 10px;
 }
 
 .card-front {
 object-fit: cover;
+border-radius: 10px;
 }
 
 .background {
@@ -103,5 +105,6 @@ object-fit: cover;
     width: 100%;
     z-index: -1;
     opacity: 0.15;
+    
 }
 

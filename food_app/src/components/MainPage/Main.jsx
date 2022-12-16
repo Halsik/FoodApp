@@ -2,11 +2,11 @@ import React, {useState, useEffect  } from "react";
 import './Main.css'
 import logo from '../images/logo.png'
 import RightSide from "./RightSide";
-import sliderPicOne from '../images/breakfast/breakfastOne.avif'
+import sliderPicOne from '../images/dessert/dessertOne.avif'
 import sliderPicTwo from '../images/breakfast/breakfastTwo.avif'
 import sliderPicThree from '../images/dinner/dinnerTwo.avif'
 import sliderPicFour from '../images/dessert/dessertTwo.avif'
-import sliderPicFive from '../images/lunch/lunchThree.avif'
+import sliderPicFive from '../images/lunch/lunchFour.avif'
 
 
 function Main(props) {

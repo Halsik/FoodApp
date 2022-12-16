@@ -65,3 +65,29 @@
     }
 
 
+    @media screen and (max-width: 800px) {
+        .navbar-button {
+            width: 0%;
+            visibility: hidden;
+        }
+
+        .navbar-section {
+            width: 0%;
+            visibility: hidden;
+        }
+
+        .navbar-logo {
+            width: 100%;
+           
+        }
+
+        
+
+        .navbar-logo-image {
+            margin: 20px;
+        }
+
+        .navbar-logo-text {
+            font-size: 40px;
+        }
+    }
