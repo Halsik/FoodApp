@@ -2,14 +2,14 @@ import React, {useState, useEffect  } from "react";
 import './Main.css'
 import logo from '../images/logo.png'
 import RightSide from "./RightSide";
-import sliderPicOne from '../images/food1.avif'
-import sliderPicTwo from '../images/food2.avif'
-import sliderPicThree from '../images/food3.avif'
-import sliderPicFour from '../images/food4.avif'
-import sliderPicFive from '../images/food5.avif'
+import sliderPicOne from '../images/breakfast/breakfastOne.avif'
+import sliderPicTwo from '../images/breakfast/breakfastTwo.avif'
+import sliderPicThree from '../images/dinner/dinnerTwo.avif'
+import sliderPicFour from '../images/dessert/dessertTwo.avif'
+import sliderPicFive from '../images/lunch/lunchThree.avif'
 
 
-function Main() {
+function Main(props) {
 
 
 const arrayOfPhotos =[
@@ -47,11 +47,11 @@ useEffect(() => {
                     <h1 className="main-header">Recepies App</h1>
                 </div>
                 <div className="main-button-container">
-                    <button className="main-button">Breakfast</button>
-                    <button className="main-button">Lunch</button>
-                    <button className="main-button">Dinner</button>
-                    <button className="main-button">Deserts</button>
-                    <button className="main-button">Coctails</button>
+                    <button onClick={props.changeToBreakfast} className="main-button">Breakfast</button>
+                    <button onClick={props.changeToLunch} className="main-button">Lunch</button>
+                    <button onClick={props.changeToDinner} className="main-button">Dinner</button>
+                    <button onClick={props.changeToDessert} className="main-button">Deserts</button>
+                    <button onClick={props.changeToCoctails}className="main-button">Coctails</button>
                 </div>
 
             </div>

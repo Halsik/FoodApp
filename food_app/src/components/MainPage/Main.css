@@ -107,4 +107,14 @@
     }
   }
 
+  @media screen and (max-width: 800px) {
+    .right-side {
+        width: 100vw;
+       
+    }
+    .left-side {
+        width: 0%;
+    }
+  }
+
 

@@ -1,7 +1,7 @@
-import React from "react";
+import React, {useState} from "react";
 import './Menu.css'
 import FlipCard from "./Flip-card";
-import foodData from "./foodData";
+
 import Navbar from "./Navbar";
 
 
@@ -9,9 +9,12 @@ import Navbar from "./Navbar";
 
 function Menu(props) {
 
-    const foodArray = foodData.food.breakfast
+  
 
-    console.log(props.type)
+    const foodArray = props.type
+
+    
+   console.log(foodArray)
 
 const newFoodArray = foodArray.map(item => {
     return (
@@ -22,7 +25,7 @@ const newFoodArray = foodArray.map(item => {
         ingredients={item.ingredients}
         coverImage={item.img}
         />
-
+        
     )
 })
 
@@ -32,7 +35,8 @@ const newFoodArray = foodArray.map(item => {
 
     return(
        <div  className="menu-container">
-            <Navbar />
+            <Navbar 
+            header={props.header}/>
             <div className="menu-card-container">
                 {newFoodArray}
             </div>
