@@ -56,6 +56,10 @@
         font-size: 20px;
         transition-duration: 0.2s;
         cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
     }
     
 .navbar-back:hover {
@@ -77,17 +81,22 @@
         }
 
         .navbar-logo {
+            
+            flex-direction: column;
             width: 100%;
-           
+            margin-top: 20px;
+           padding-bottom: 20px;
         }
 
         
 
         .navbar-logo-image {
-            margin: 20px;
+            margin: 0;
+            height: 45px;
         }
 
         .navbar-logo-text {
-            font-size: 40px;
+            font-size: 30px;
         }
+        
     }

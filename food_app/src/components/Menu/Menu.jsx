@@ -1,20 +1,15 @@
 import React, {useState} from "react";
 import './Menu.css'
-import FlipCard from "./Flip-card";
+import FlipCard from "./Flipcard/Flip-card";
 
-import Navbar from "./Navbar";
+import Navbar from "./Navbar/Navbar";
 
 
 
 
 function Menu(props) {
 
-  
-
     const foodArray = props.type
-
-    
-   console.log(foodArray)
 
 const newFoodArray = foodArray.map(item => {
     return (

@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './App.css';
-import Main from './components/MainPage/Main';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Main from './components/MainPage/LeftSide/Main';
 import Menu from './components/Menu/Menu';
 import foodData from "./components/Menu/foodData"
 
@@ -9,8 +10,8 @@ function App() {
 
 
 
-  const [typeOfMeal, setTypeOfMeal] = useState(foodData.food.breakfast)
-  const [headerMeal, setHeaderMeal] = useState("Breakfast")
+  const [typeOfMeal, setTypeOfMeal] = useState(foodData.food.dessert)
+  const [headerMeal, setHeaderMeal] = useState("Dessert")
 
   const changeToDinner = () => {
     setTypeOfMeal(foodData.food.dinner)
@@ -22,7 +23,7 @@ function App() {
     setHeaderMeal("Breakfast")
   }
   const changeToLunch = () => {
-    setTypeOfMeal(prevTypeOfMeal => foodData.food.lunch)
+    setTypeOfMeal(foodData.food.lunch)
     setHeaderMeal("Lunch")
   }
   const changeToDessert = () => {
@@ -37,16 +38,24 @@ function App() {
   console.log(typeOfMeal)
 
   return (
+
     <div className="App">
-      {/* <Main 
-      changeToDinner={changeToDinner}
-      changeToLunch={changeToLunch}
-      changeToBreakfast={changeToBreakfast}
-      changeToDessert={changeToDessert}
-      changeToCoctails={changeToCoctails}/> */}
-      <Menu 
-      type={typeOfMeal}
-      header={headerMeal}/>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={
+            <Main 
+            changeToDinner={changeToDinner}
+            changeToLunch={changeToLunch}
+            changeToBreakfast={changeToBreakfast}
+            changeToDessert={changeToDessert}
+            changeToCoctails={changeToCoctails}/>
+            }/>
+          <Route path='menu' element={<Menu 
+            type={typeOfMeal}
+            header={headerMeal}/>}/>
+          
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

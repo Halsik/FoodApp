@@ -1,13 +1,16 @@
 import React from "react";
 import './Navbar.css'
-import logo from '../images/logo.png'
+import logo from '../../images/logo.png'
+import { Link } from 'react-router-dom';
 
 
 function Navbar(props) {
     return(
         <div className="navbar-container">
             <div className="navbar-button">
-                <button className="navbar-back">Main Menu</button>
+                <Link to='/' className="navbar-back">
+                    <p>Main Menu</p>
+                    </Link>
             </div>
             <div className="navbar-section">
                 <h1 className="navbar-header">{props.header}</h1>

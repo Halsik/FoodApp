@@ -1,9 +1,9 @@
 import React from "react";
 import './Card.css'
-import './flip-transition.css'
+import '../flip-transition.css'
 
 
-import backgroundCard from '../images/backgroundImage.avif'
+import backgroundCard from '../../../images/backgroundImage.avif'
 
 function Card(props) {
     return(
@@ -16,18 +16,20 @@ function Card(props) {
                </div>
                <div className="card-details-list">
                     <div className="card-details-list-box">
-                        <p className="card-details-item">{props.ingredients}</p>
-                        <p className="card-details-item">Honey 10ml</p>
-                        <p className="card-details-item">Milk 200ml</p>
-                        <p className="card-details-item">2x Bread</p>
+                        <p className="card-details-item">Lorem Ipsum</p>
+                        <p className="card-details-item">Lorem Ipsum</p>
+                        <p className="card-details-item">Lorem Ipsum</p>
+                        <p className="card-details-item">Lorem Ipsum</p>
                     </div>
                     <div className="card-details-list-box">
-                        <p className="card-details-item">Sugar 50g</p>
-                        <p className="card-details-item">Honey 10ml</p>
-                        <p className="card-details-item">Milk 200ml</p>
-                        <p className="card-details-item">2x Bread</p>
+                    <p className="card-details-item">Lorem Ipsum</p>
+                        <p className="card-details-item">Lorem Ipsum</p>
+                        <p className="card-details-item">Lorem Ipsum</p>
+                        <p className="card-details-item">Lorem Ipsum</p>
                     </div>
                </div>
+               <br />
+               <h1>How to make?</h1>
                <div className="card-details-recipt">
                     <p className="card-details-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio explicabo possimus nesciunt recusandae deserunt dolore enim perspiciatis sunt voluptatem illo, impedit quibusdam obcaecati aspernatur, repellat maiores consequuntur officia sequi nisi.</p>
                     <br />

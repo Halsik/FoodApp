@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import './Flip-card.css'
-import Card from "./Card";
+import Card from "./Card/Card";
 import {CSSTransition} from 'react-transition-group'
 import './flip-transition.css'
 
