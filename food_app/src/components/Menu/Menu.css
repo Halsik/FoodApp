@@ -3,7 +3,7 @@
     height: 100%;
     display: flex;
     animation-name: showPage;
-    animation-duration: 0.5s;
+    animation-duration: 1s;
     flex-direction: column;
    
 }
@@ -19,7 +19,6 @@
     justify-content: flex-start;
     flex: 0 0 auto;   
     padding-top: 20px;  
-   
 }
 
 
@@ -52,15 +51,15 @@ h1 {
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #888; 
-  width: 80%;
+  background: rgba(191, 191, 191, 0.639); 
+  width: 10px;
 }
 
 
 
 ::-webkit-scrollbar-thumb:horizontal{
     width: 80%;
-    background: rgba(0, 0, 0, 0.404);
+    background: rgba(193, 193, 193, 0.404);
     border-radius: 10px;
 }
 

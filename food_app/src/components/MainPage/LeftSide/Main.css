@@ -2,7 +2,7 @@
 
 .main-container {
     animation-name: showPage;
-    animation-duration: 0.5s;
+    animation-duration: 1s;
     height: 100%;
     width: 100%;
     display: flex;

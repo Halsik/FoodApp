@@ -22,10 +22,11 @@ function Card(props) {
                         <p className="card-details-item">Lorem Ipsum</p>
                     </div>
                     <div className="card-details-list-box">
-                    <p className="card-details-item">Lorem Ipsum</p>
                         <p className="card-details-item">Lorem Ipsum</p>
                         <p className="card-details-item">Lorem Ipsum</p>
                         <p className="card-details-item">Lorem Ipsum</p>
+                        <p className="card-details-item">Lorem Ipsum</p>
+                        
                     </div>
                </div>
                <br />

@@ -63,7 +63,7 @@ export default {
             },
             
             
-    ],
+        ],
         "dinner": [
             {
                 "id": 1,

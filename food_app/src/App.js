@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Main from './components/MainPage/LeftSide/Main';
 import Menu from './components/Menu/Menu';
 import foodData from "./components/Menu/foodData"
+import AddPage from './components/AddPage/AddPage';
 
 
 function App() {
@@ -35,8 +36,6 @@ function App() {
     setHeaderMeal("Coctails")
   }
 
-  console.log(typeOfMeal)
-
   return (
 
     <div className="App">
@@ -56,6 +55,7 @@ function App() {
           
         </Routes>
       </BrowserRouter>
+      {/* <AddPage /> */}
     </div>
   );
 }
